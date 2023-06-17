@@ -47,37 +47,4 @@ public class clientBlowfish {
         
         return finalRand;
     }
-    
-    /*public static void main(String[] args) {
-        long start1, start2, end1, end2, milli1, milli2;
-        String key;
-        File forTest = new File("C:/Users/user/Documents/dataClient/Client01.png");
-        
-        try {
-            FileInputStream fis = new FileInputStream(forTest);
-            byte[] newByte = new byte[fis.available()];
-            byte[] encrypted, decrypted;
-            fis.read(newByte);
-            
-            clientBlowfish testing = new clientBlowfish(newByte);
-            start1 = System.currentTimeMillis();
-            encrypted = testing.crypting();
-            end1 = System.currentTimeMillis();
-            System.out.println("Ciphertext size: " + (double) encrypted.length / 1024);
-            milli1 = end1 - start1;
-            key = testing.getKey();
-            System.out.println("Encrypt milli: " + milli1);
-            System.out.println("InSec: " + (float) milli1 / 1000);
-            
-            clientBlowfish testing2 = new clientBlowfish(encrypted, key);
-            start2 = System.currentTimeMillis();
-            decrypted = testing2.crypting();
-            end2 = System.currentTimeMillis();
-            milli2 = end2 - start2;
-            System.out.println("Decrypt milli: " + milli2);
-            System.out.println("InSec: " + (float) milli2 / 1000);
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
-    }*/
 }
